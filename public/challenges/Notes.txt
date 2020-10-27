@@ -1,0 +1,90 @@
+// Extend the React.Component
+/**
+ * Steps in creating a component
+ *  1) class className extends React.Component
+ *  2) render() {}
+ *  3) return the jsx expression
+ *  4) Setting up attributes/bindings is same as setting up props in react
+ */
+
+/**
+ * Component state- when there is change in the state i.e., adding an option to options then the options component should update and re-render
+ *  1) Setups default state Object
+ *  2) Component rendered with default state values
+ *  3) Change state based on event
+ *  4) Component re-render using new state values
+ *  5) repeat steps 3 and 4
+ */
+//import Header from '../src/components/Header';
+/**
+ * Note: props are one-way bound. So, you need a callback binding to do modifications to the state in the parent component
+ */
+/**
+ * Two types of components
+ *  1) State-based class components (manages state)
+ *  2) Stateless functional components (presentation of UI)
+ *      - stateless components do not have this, you pass props and grab attributes from that
+ *      - faster than class based component because there is no overhead of extending React.Component
+ */
+
+ /**
+  * Component mounting -> life cycle $onInit in AngularJS -> component is created and inserted into the DOM
+  * constructor() -> componentWillMount() -> render() -> componentDidMount()
+  */
+ // TODO: The stateless functional components don't have life cycle methods
+Check out Synthetic Events
+    1) Form Events  
+        - onSubmit
+        - onChange
+        - onInputs
+
+Babel command to convert code to ES5
+    - babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+    //"build babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
+
+What is React component?
+    - Individual piece of an UI
+
+What is the difference between props vs state?
+Similarities
+    - Both props and state are objects
+    - Both props and state can be used when rendering a component
+    - Both props and state can cause re-renders; for props changes from above/parent component
+
+Difference
+    - props flow in one direction/one-way binding
+    - props cannot be changes by the component itself; its one-directional
+    - state is defined in the component
+    - state can be changes by component itself
+
+
+What is Webpack?
+    - Asset/Module bundler
+    - Import/grab thrid-party dependencies and bundle it to use in the app i.e., React, ReactDOM, Lodash, RxJS ,,,,
+    - Before Webpack, it was the server side that was doing the heavy-lifting not any more
+
+Why it is bad idea to install global modules i.e., npm or yarn?
+    - So far we installed babel CLI and live server (not ideal)
+    - Our package.json has these dependencies so if you're putting it out there for collaboration they would've to use the same versions to run it.
+    
+/**
+ * How to import npm modules?
+ *      - yarn add validator
+ */
+    
+// Part 2
+    - Client routing
+    - Client authentication
+    - Data storage
+
+// Higher Order Component (HOC)
+    - A component (HOC) that renders another component
+    - HOC aims to 
+        1) Reuse code
+        2) Render Hijacking
+        3) Prop manipulation
+        4) abstract state
+
+// Add react-redux library to the project
+yarn add react-redux
+    - When you connect component to resdux store through connect, it reacts to the store changes

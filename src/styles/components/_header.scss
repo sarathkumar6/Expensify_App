@@ -1,0 +1,21 @@
+
+.header {
+    background: $black;
+    color: white;
+    margin-bottom: $rem-extra-large;
+    padding: $rem-medium 0;    
+    text-align: center;
+}
+//BEM naming convention
+.header__title {
+    color: white;
+    font-size: $rem-large;
+    margin-bottom: 1rem;
+}
+
+.headet__subtitle {
+    color: $partial-white;
+    font-size: $rem-medium;
+    font-weight: 300;
+    margin: 0;
+}

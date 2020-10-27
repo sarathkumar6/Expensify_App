@@ -1,0 +1,31 @@
+.large-button {
+    background-color: $purple;
+    border: none;
+    border-bottom: 0.6rem solid darken($purple, 20%);
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: $rem-large;
+    padding: 2.4rem;
+    width: 100%;
+}
+
+.large-button:disabled {
+    opacity: 0.5;    
+}
+
+.button {
+    background: $purple;
+    border: none;
+    border-bottom: 0.3rem solid darken($purple, 20%);
+    color: white;
+    font-weight: 500;
+    padding: $rem-small;
+}
+//Block--Modifier
+.button--link {
+    background: none;
+    border: none;
+    color: $partial-white;
+    padding: 0;
+}
